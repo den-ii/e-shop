@@ -65,6 +65,7 @@ const Pagination = ({
             </li>
           );
         }
+        return <></>;
       })}
 
       <li
