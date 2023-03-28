@@ -61,7 +61,7 @@ const Cart = () => {
   };
 
   return (
-    <section>
+    <section style={{ minHeight: "80vh" }}>
       <div className={`container ${styles.table}`}>
         <h2>Shopping Cart</h2>
         {cartItems.length === 0 ? (

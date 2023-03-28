@@ -13,7 +13,7 @@ const OrderDetails = () => {
   }, [document]);
 
   return (
-    <section>
+    <section style={{ minHeight: "80vh" }}>
       <div className={`container ${styles.table}`}>
         <h2>Order Details</h2>
         <div>

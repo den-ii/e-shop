@@ -26,7 +26,7 @@ const OrderHistory = () => {
   const filteredOrders = orders.filter((order) => order.userID === userID);
 
   return (
-    <section>
+    <section style={{ minHeight: "80vh" }}>
       <div className={`container ${styles.order}`}>
         <h2>Your Order History</h2>
         <p>
