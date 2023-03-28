@@ -64,6 +64,7 @@ const Checkout = () => {
         setMessage("Failed to initialize checkout");
         toast.error("Something went wrong!!!");
       });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const appearance = {

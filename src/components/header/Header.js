@@ -36,14 +36,13 @@ const Header = () => {
   const [displayName, setdisplayName] = useState("");
   const [scrollPage, setScrollPage] = useState(false);
   const cartTotalQuantity = useSelector(selectCartTotalQuantity);
+  const dispatch = useDispatch();
 
   useEffect(() => {
     dispatch(CALCULATE_TOTAL_QUANTITY());
-  }, []);
+  }, [dispatch]);
 
   const navigate = useNavigate();
-
-  const dispatch = useDispatch();
 
   const fixNavbar = () => {
     if (window.scrollY > 50) {
