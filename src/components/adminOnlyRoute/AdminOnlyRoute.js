@@ -7,7 +7,7 @@ const AdminOnlyRoute = ({ children }) => {
   const userEmail = useSelector(selectEmail);
 
   if (userEmail === process.env.REACT_APP_ADMIN_USER) {
-    return children;
+    return <div>{children}</div>;
   }
   return (
     <section style={{ height: "80vh" }}>
