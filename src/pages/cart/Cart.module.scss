@@ -22,8 +22,9 @@
       vertical-align: top;
       text-align: left;
       padding: 8px;
+
       &.icons {
-        > * {
+        >* {
           margin-right: 5px;
           cursor: pointer;
         }
@@ -38,35 +39,42 @@
       background-color: #eee;
     }
   }
+
   .summary {
     margin-top: 2rem;
     display: flex;
     justify-content: space-between;
-    align-items: start;
+    align-items: flex-start;
 
     .card {
       padding: 1rem;
+
       .text {
         display: flex;
         justify-content: space-between;
         align-items: center;
+
         h3 {
           color: var(--color-danger);
         }
       }
+
       button {
         margin-top: 5px;
       }
     }
   }
 }
+
 .count {
   display: flex;
   align-items: center;
+
   button {
     border: 1px solid var(--darkblue);
   }
-  & > * {
+
+  &>* {
     margin-right: 1rem;
   }
 }
